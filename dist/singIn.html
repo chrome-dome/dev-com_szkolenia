@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- header-hero -->
+
+    <header class="h-[120vh] bg-cover " style="background-image: url(/dist/img/online-learning.jpeg);">
+        <div class="h-full bg-black bg-opacity-40">
+            <nav class="py-4">
+                <div class="container mx-auto px-2 flex justify-between text-white">
+                    <div>
+                       <a href="index.html"><h1 class="text-xl">Helion-Szkolenia</h1></a> 
+                    </div>
+                    <div>
+                        <ul class="flex space-x-16 text-sm font-thin">
+                            <li class="hover:text-gray-300"><a href="index.html">Jak zacząć</a></li>
+                            <li class="hover:text-gray-300"><a href="courses.html">Kursy</a></li>
+                            <li class="hover:text-gray-300"><a href="index.html">O nas</a></li>
+                            <li class="hover:text-gray-300"><a href="#contact">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <button>
+                        <a class="border px-5 py-2 rounded-lg hover:text-gray-300 border-gray-300" href="singIn.html">zapisz się</a>
+                    </button>
+                </div>
+
+<!-- formularz -->
+
+                <form>
+                    <div class="space-y-12 bg-gray-50 mt-6 container px-10 mx-auto">
+                        <div class="border-b border-gray-900/10 pb-12 text-center">
+                            <h2 class="text-base font-semibold leading-7 text-gray-900 pt-10">Wypełnij formularz</h2>
+                        </div>
+
+                        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 pb-10">
+
+
+                            <div class="sm:col-span-4">
+                                <label for="course" class="block text-sm font-medium leading-6 text-gray-900">Wybierz kurs</label>
+                                <div class="mt-2">
+                                    <select id="course" name="course" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                        <option value="" disabled selected>Wybierz kurs</option>
+                                        <option value="course1">Kurs 1</option>
+                                        <option value="course2">Kurs 2</option>
+                                        <option value="course3">Kurs 3</option>
+                                        <!-- Tutaj możesz dodać więcej opcji -->
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="sm:col-span-3">
+                                <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Imię</label>
+                                <div class="mt-2">
+                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+
+                            <div class="sm:col-span-3">
+                                <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Nazwisko</label>
+                                <div class="mt-2">
+                                    <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+
+                            <div class="sm:col-span-4">
+                                <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Adres email</label>
+                                <div class="mt-2">
+                                    <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+
+                            <div class="sm:col-span-4">
+                                <label for="street" class="block text-sm font-medium leading-6 text-gray-900">Adres zamieszkania</label>
+                                <div class="mt-2">
+                                    <input id="text" name="street" type="street" autocomplete="text" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>   
+                            
+                            <div class="sm:col-span-2 sm:col-start-1">
+                                <label for="phone" class="block text-sm font-medium leading-6 text-gray-900">Numer kontaktowy</label>
+                                <div class="mt-2">
+                                    <input type="tel" name="phone" id="phone" autocomplete="tel" pattern="[0-9]{9}" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                      
+                            <div class="sm:col-span-2">
+                                <label for="city" class="block text-sm font-medium leading-6 text-gray-900">Miasto</label>
+                                    <div class="mt-2">
+                                        <input type="text" name="city" id="city" autocomplete="address-level1" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                    </div>
+                            </div>
+                      
+                            <div class="sm:col-span-2">
+                                <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">Kod pocztowy</label>
+                                <div class="mt-2">
+                                    <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" pattern="^[0-9]{2}-[0-9]{3}$" placeholder="XX-XXX" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+                                <span id="postal-code-error" class="text-red-600 text-sm hidden">Wprowadź kod pocztowy w formacie XX-XXX.</span>
+                            </div>
+                        </div>
+
+                        <div class="border-b border-gray-900/10 pb-12">                         
+                            <div class="mt-10 space-y-10">
+                                <fieldset>
+                                    <legend class="text-sm font-semibold leading-6 text-gray-900">Zgłaszam się jako</legend>
+                                    <div class="mt-6 space-y-6">
+                                        <div class="relative flex gap-x-3">
+                                            <div class="flex h-6 items-center">
+                                                <input id="private" name="registrationType" type="radio" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                                            </div>
+                                            <div class="text-sm leading-6">
+                                                <label for="private" class="font-medium text-gray-900">Osoba prywatna</label>
+                                            </div>
+                                        </div>
+                                        <div class="relative flex gap-x-3">
+                                            <div class="flex h-6 items-center">
+                                                <input id="company" name="registrationType" type="radio" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                                            </div>
+                                            <div class="text-sm leading-6">
+                                                <label for="company" class="font-medium text-gray-900">Firma</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="container mx-auto text-center pt-6">
+                                <button><a class="bg-red-500 text-white text-sm px-5 py-2 inline-block rounded-lg hover:bg-red-700" href="">Wyślij</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!-- stopka -->
+
+    <footer class="bg-black pt-12" id="contact">
+        <div class="container mx-auto px-2 text-white">
+                <div class="pb-6">
+                    <h2 class="text-xl mb-4 text-center">Więcej</h2>
+                    <ul class="text-center space-y-2 font-thin text-sm">
+                        <li><a href="index.html" class="hover:text-gray-400">Strona główna</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Polityka prywatności</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Zespół</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Klienci</a></li>
+                    </ul>
+                </div>
+                <div class="flex justify-between py-4">
+                    <div>
+                        <p class="text-xs text-left">Copyright © 2024 Helion Szkolenia. All rights reserved.</p>
+                    </div>
+                    <div class="flex items-center space-x-4 text-lg">
+                        <a href="https://www.facebook.com" aria-label="Facebook" class="hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/" aria-label="YouTube" class="hover:text-gray-400"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn" class="hover:text-gray-400"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>

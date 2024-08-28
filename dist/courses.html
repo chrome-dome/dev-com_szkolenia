@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    
+<!-- header-hero -->
+
+<header class="h-[7vh] bg-cover " style="background-image: url(/dist/img/online-learning.jpeg);">
+    <div class="h-full bg-black bg-opacity-40">
+        <nav class="py-4">
+            <div class="container mx-auto px-2 flex justify-between text-white">
+                <div>
+                   <a href="index.html"><h1 class="text-xl">Helion-Szkolenia</h1></a> 
+                </div>
+                <div>
+                    <ul class="flex space-x-16 text-sm font-thin">
+                        <li class="hover:text-gray-300"><a href="index.html">Jak zacząć</a></li>
+                        <li class="hover:text-gray-300"><a href="courses.html">Kursy</a></li>
+                        <li class="hover:text-gray-300"><a href="index.html">O nas</a></li>
+                        <li class="hover:text-gray-300"><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <button>
+                    <a class="border px-5 py-2 rounded-lg hover:text-gray-300 border-gray-300" href="singIn.html">zapisz się</a>
+                </button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- dostępne kursy i wyszukiwarka -->
+
+    <section class="p-20 bg-gray-50" id="OurCourses">
+        <div class="container mx-auto px-2">
+
+            <div class="bg-white p-6 rounded-lg shadow-lg mb-10">
+                <h3 class="text-2xl font-semibold mb-6 text-center">Filtruj kursy</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div>
+                        <label for="field" class="block text-sm font-medium text-gray-700">Dziedzina</label>
+                        <select id="field" name="field" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <option value="">Wybierz dziedzinę</option>
+                            <option value="programming">Programowanie</option>
+                            <option value="networking">Sieci</option>
+                            <option value="cybersecurity">Cyberbezpieczeństwo</option>
+                            <option value="office">Pakiet Office</option>
+                            <option value="ai">Sztuczna inteligencja</option>
+                            <!-- Dodaj więcej opcji, jeśli potrzeba -->
+                        </select>
+                    </div>
+    
+                    <div>
+                        <label for="level" class="block text-sm font-medium text-gray-700">Poziom zaawansowania</label>
+                        <select id="level" name="level" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <option value="">Wybierz poziom</option>
+                            <option value="beginner">Podstawowy</option>
+                            <option value="intermediate">Średniozaawansowany</option>
+                            <option value="advanced">Zaawansowany</option>
+                            <option value="expert">Ekspert</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mode" class="block text-sm font-medium text-gray-700">Tryb</label>
+                        <select id="mode" name="mode" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <option value="">Wybierz tryb</option>
+                            <option value="online">Zdalne</option>
+                            <option value="onsite">Stacjonarne</option>
+                            <option value="hybrid">Hybrydowe</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="mt-6 text-center">
+                    <button class="bg-red-500 text-white text-sm px-5 py-2 rounded-lg hover:bg-red-700">Filtruj</button>
+                </div>
+            </div>
+
+            <h2 class="text-3xl mb-10 text-center">Nasze kursy</h2>
+            <div class="flex gap-6">
+                <div class="w-1/2 shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-red-200 to-slate-200">
+                    <div class="px-4 py-6">
+                        <h4 class="font-bold mb-2 text-xl px-2">Zaawansowany Python dla programistów</h4>
+                        <div class="flex justify-between p-2">
+                            <p class="mb-2 text-gray-600 py-2">27.09.2024 - 28.09.2024</p>
+                            <p class="mb-2 text-right border border-slate-400 px-5 py-2 rounded-lg">Zdalne</p>
+                        </div>
+                        <h4 class="text-justify text-sm my-10 px-2">Szkolenie obejmuje zaawansowane programowanie wielowątkowe i asynchroniczne, zarządzanie pamięcią, optymalizacja kodu, praca z frameworkami webowymi (Django, Flask), tworzenie i testowanie mikrousług, wykorzystanie bibliotek do analizy danych i machine learningu, oraz implementacja wzorców projektowych.</h4>
+                        <div class="px-2">
+                            <span>Miejsce Szkolenia: </span><span class="text-gray-600">Zdalnie</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Czas trwania: </span><span class="text-gray-600">2 dni</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Liczba godzin: </span><span class="text-gray-600">16 h</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Wymagant poziom: </span><span class="text-gray-600">Zaawansowany</span>
+                        </div>
+                        <div class="text-right px-2 pt-10 font-bold">
+                            <p>1200 zł netto / 1476 zł brutto</p>
+                        </div>
+                        <button class="py-5 mt-5"><a class="bg-red-500 text-white text-sm px-5 py-2 inline-block rounded-lg hover:bg-red-700" href="">Zapisz się</a></button>                      
+                    </div>
+                </div>
+                <div class="w-1/2 shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-red-200 to-slate-200">
+                    <div class="px-4 py-6">
+                        <h4 class="font-bold mb-2 text-xl px-2">Administrowanie siecią</h4>
+                        <div class="flex justify-between p-2">
+                            <p class="mb-2 text-gray-600 py-2">04.10.2024 - 06.10.2024</p>
+                            <p class="mb-2 text-right border border-slate-400 px-5 py-2 rounded-lg">Stacjonarne</p>
+                        </div>
+                        <h4 class="text-justify text-sm my-10 px-2">Szkolenie obejmuje konfigurację sieci i zarządzanie routerami i przełącznikami, zaawansowane protokoły routingu (OSPF, BGP), bezpieczeństwo sieci (firewalle, IDS/IPS), wirtualizacja sieci (SDN, NFV), monitorowanie i optymalizacja wydajności sieci, zarządzanie sieciami w chmurze oraz rozwiązywanie problemów sieciowych na poziomie eksperckim.</h4>
+                        <div class="px-2">
+                            <span>Miejsce Szkolenia: </span><span class="text-gray-600">Warszawa</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Czas trwania: </span><span class="text-gray-600">3 dni</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Liczba godzin: </span><span class="text-gray-600">24 h</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Wymagant poziom: </span><span class="text-gray-600">Ekspert</span>
+                        </div>
+                        <div class="text-right px-2 pt-10 font-bold">
+                            <p>2200 zł netto / 2706 zł brutto</p>
+                        </div>
+                        <button class="py-5 mt-5"><a class="bg-red-500 text-white text-sm px-5 py-2 inline-block rounded-lg hover:bg-red-700" href="">Zapisz się</a></button>                      
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-6 py-6">
+                <div class="w-1/2 shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-red-200 to-slate-200">
+                    <div class="px-4 py-6">
+                        <h4 class="font-bold mb-2 text-xl px-2">Cyberbezpieczeństwo dzieci</h4>
+                        <div class="flex justify-between p-2">
+                            <p class="mb-2 text-gray-600 py-2">27.09.2024</p>
+                            <p class="mb-2 text-right border border-slate-400 px-5 py-2 rounded-lg">Zdalne</p>
+                        </div>
+                        <h4 class="text-justify text-sm my-10 px-2">Szkolenie obejmuje analizę i zapobieganie zagrożeniom w sieci, zarządzanie bezpieczeństwem systemów operacyjnych i aplikacji, konfigurację zapór sieciowych i VPN, zabezpieczenie przed phishingiem i malware, tworzenie polityk bezpieczeństwa oraz zarządzanie incydentami i reagowanie na naruszenia bezpieczeństwa.</h4>
+                        <div class="px-2">
+                            <span>Miejsce Szkolenia: </span><span class="text-gray-600">Zdalnie</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Czas trwania: </span><span class="text-gray-600">1 dzień</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Liczba godzin: </span><span class="text-gray-600">8 h</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Wymagant poziom: </span><span class="text-gray-600">Podstawowy</span>
+                        </div>
+                        <div class="text-right px-2 pt-10 font-bold">
+                            <p>1200 zł netto / 1476 zł brutto</p>
+                        </div>
+                        <button class="py-5 mt-5"><a class="bg-red-500 text-white text-sm px-5 py-2 inline-block rounded-lg hover:bg-red-700" href="">Zapisz się</a></button>                      
+                    </div>
+                </div>
+                <div class="w-1/2 shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-red-200 to-slate-200">
+                    <div class="px-4 py-6">
+                        <h4 class="font-bold mb-2 text-xl px-2">Zaawansowany pakiet office dla biur</h4>
+                        <div class="flex justify-between p-2">
+                            <p class="mb-2 text-gray-600 py-2">14.10.2024 - 15.10.2024</p>
+                            <p class="mb-2 text-right border border-slate-400 px-5 py-2 rounded-lg">Stacjonarne</p>
+                        </div>
+                        <h4 class="text-justify text-sm my-10 px-2">Szkolenie obejmuje zaawansowane funkcje Excel, takie jak tabele przestawne, makra i formuły, edycję dokumentów Word z wykorzystaniem stylów i szablonów, tworzenie dynamicznych prezentacji w PowerPoint, zarządzanie dużymi bazami danych w Access, automatyzację zadań w Outlook oraz współpracę zespołową z wykorzystaniem SharePoint i Teams.</h4>
+                        <div class="px-2">
+                            <span>Miejsce Szkolenia: </span><span class="text-gray-600">Gdańsk</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Czas trwania: </span><span class="text-gray-600">2 dni</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Liczba godzin: </span><span class="text-gray-600">16 h</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Wymagant poziom: </span><span class="text-gray-600">Zaawansowany</span>
+                        </div>
+                        <div class="text-right px-2 pt-10 font-bold">
+                            <p>1800 zł netto / 2214 zł brutto</p>
+                        </div>
+                        <button class="py-5 mt-5"><a class="bg-red-500 text-white text-sm px-5 py-2 inline-block rounded-lg hover:bg-red-700" href="">Zapisz się</a></button>                      
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-6 py-6">
+                <div class="w-1/2 shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-red-200 to-slate-200">
+                    <div class="px-4 py-6">
+                        <h4 class="font-bold mb-2 text-xl px-2">Wykorzystanie sztucznej inteligencji w HR</h4>
+                        <div class="flex justify-between p-2">
+                            <p class="mb-2 text-gray-600 py-2">29.10.2024</p>
+                            <p class="mb-2 text-right border border-slate-400 px-5 py-2 rounded-lg">Zdalne</p>
+                        </div>
+                        <h4 class="text-justify text-sm my-10 px-2">Szkolenie obejmuje wykorzystanie AI do automatyzacji procesów rekrutacyjnych, analizę danych kandydatów, zastosowanie chatbotów w komunikacji z kandydatami, ocenę zaangażowania i satysfakcji pracowników, optymalizację procesów szkoleniowych oraz wdrażanie algorytmów do oceny wydajności i rozwoju talentów.</h4>
+                        <div class="px-2">
+                            <span>Miejsce Szkolenia: </span><span class="text-gray-600">Zdalnie</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Czas trwania: </span><span class="text-gray-600">1 dzień</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Liczba godzin: </span><span class="text-gray-600">8 h</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Wymagant poziom: </span><span class="text-gray-600">Podstawowy</span>
+                        </div>
+                        <div class="text-right px-2 pt-10 font-bold">
+                            <p>1200 zł netto / 1476 zł brutto</p>
+                        </div>
+                        <button class="py-5 mt-5"><a class="bg-red-500 text-white text-sm px-5 py-2 inline-block rounded-lg hover:bg-red-700" href="">Zapisz się</a></button>                      
+                    </div>
+                </div>
+                <div class="w-1/2 shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-red-200 to-slate-200">
+                    <div class="px-4 py-6">
+                        <h4 class="font-bold mb-2 text-xl px-2">Bezpieczne płatności</h4>
+                        <div class="flex justify-between p-2">
+                            <p class="mb-2 text-gray-600 py-2">10.10.2024</p>
+                            <p class="mb-2 text-right border border-slate-400 px-5 py-2 rounded-lg">Hybrydowe</p>
+                        </div>
+                        <h4 class="text-justify text-sm my-10 px-2">Szkolenie obejmuje zabezpieczanie transakcji online, zarządzanie ryzykiem i wykrywanie oszustw, zasady działania szyfrowania i tokenizacji danych, ochrona danych kart płatniczych, stosowanie dwuskładnikowej autoryzacji, edukacja klientów na temat bezpiecznych praktyk oraz monitorowanie i analiza działań podejrzanych.</h4>
+                        <div class="px-2">
+                            <span>Miejsce Szkolenia: </span><span class="text-gray-600">Zdalne</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Czas trwania: </span><span class="text-gray-600">1 dzień</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Liczba godzin: </span><span class="text-gray-600">4 h</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Wymagant poziom: </span><span class="text-gray-600">Zaawansowany</span>
+                        </div>
+                        <div class="text-right px-2 pt-10 font-bold">
+                            <p>1200 zł netto / 1476 zł brutto</p>
+                        </div>
+                        <button class="py-5 mt-5"><a class="bg-red-500 text-white text-sm px-5 py-2 inline-block rounded-lg hover:bg-red-700" href="">Zapisz się</a></button>                      
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto text-center pt-20">
+               <a class="bg-red-500 text-white text-sm px-5 py-2 inline-block rounded-lg hover:bg-red-700" href="">Zobacz więcej</a>
+           </div>
+        </div>
+    </section>
+
+    <!-- stopka -->
+
+    <footer class="bg-black pt-12" id="contact">
+        <div class="container mx-auto px-2 text-white">
+                <div class="pb-6">
+                    <h2 class="text-xl mb-4 text-center">Więcej</h2>
+                    <ul class="text-center space-y-2 font-thin text-sm">
+                        <li><a href="index.html" class="hover:text-gray-400">Strona główna</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Polityka prywatności</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Zespół</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Klienci</a></li>
+                    </ul>
+                </div>
+                <div class="flex justify-between py-4">
+                    <div>
+                        <p class="text-xs text-left">Copyright © 2024 Helion Szkolenia. All rights reserved.</p>
+                    </div>
+                    <div class="flex items-center space-x-4 text-lg">
+                        <a href="https://www.facebook.com" aria-label="Facebook" class="hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/" aria-label="YouTube" class="hover:text-gray-400"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn" class="hover:text-gray-400"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>

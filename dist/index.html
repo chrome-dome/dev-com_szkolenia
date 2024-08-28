@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="font-roboto">
+
+<!-- header-hero -->
+
+<header class="h-[80vh] bg-cover bg-top" style="background-image: url(/dist/img/pexels-mizunokozuki-12902857.jpg);">
+    <div class="h-full bg-black bg-opacity-40">
+        <nav class="py-4">
+            <div class="container mx-auto px-2 flex justify-between items-center text-white">
+                <div>
+                    <a href="index.html"><h1 class="text-xl">Helion-Szkolenia</h1></a>
+                </div>
+                <!-- Ikona hamburgera dla urządzeń mobilnych -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Menu nawigacji -->
+                <div class="hidden lg:flex">
+                    <ul class="flex space-x-16 text-sm font-thin">
+                        <li class="hover:text-gray-300"><a href="#HowToStart">Jak zacząć</a></li>
+                        <li class="hover:text-gray-300"><a href="courses.html">Kursy</a></li>
+                        <li class="hover:text-gray-300"><a href="#aboutUs">O nas</a></li>
+                        <li class="hover:text-gray-300"><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <button class="hidden lg:block">
+                    <a class="border px-5 py-2 rounded-lg hover:text-gray-300 border-gray-300" href="singIn.html">Zapisz się</a>
+                </button>
+            </div>
+
+            <!-- Menu mobilne -->
+            <div id="mobile-menu" class="hidden lg:hidden text-white px-2">
+                <ul class="flex flex-col space-y-4 text-sm font-thin mt-4">
+                    <li class="hover:text-gray-300"><a href="#HowToStart">Jak zacząć</a></li>
+                    <li class="hover:text-gray-300"><a href="courses.html">Kursy</a></li>
+                    <li class="hover:text-gray-300"><a href="#aboutUs">O nas</a></li>
+                    <li class="hover:text-gray-300"><a href="#contact">Kontakt</a></li>
+                    <li class="self-start border px-5 py-2 rounded-lg hover:text-gray-300 border-gray-300">Zapisz się</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container mx-auto h-full flex items-center">
+            <div class="w-full sm:w-2/3 lg:w-1/3 px-4">
+                <h1 class="text-white text-2xl py-8">Zadbaj o swoją przyszłość.</h1>
+                <p class="text-gray-200 text-sm text-left pb-8 font-thin">Ułatwiamy zdobywanie wiedzy, której potrzebujesz, aby rozwijać się i osiągać swoje cele. Weź sprawy w swoje ręce i zacznij swoją edukacyjną przygodę już dziś.</p>
+                <a class="bg-red-500 text-white text-sm px-10 py-2 inline-block rounded-lg hover:bg-red-700" href="singIn.html">Rozpocznij</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- jak zacząć -->
+
+    <section id="HowToStart" class="p-20 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="mx-auto px-24">
+                <h2 class="text-2xl font-bold mb-6 text-center">Rozpocznij naukę z łatwością</h2>
+                <p class="px-10 text-gray-600 text-sm mb-10 text-center">Nie musisz tracić czasu na skomplikowane procedury. U nas nauka jest prosta, dostępna i dostosowana do Twoich potrzeb. Dołącz do nas i zrób pierwszy krok w kierunku swojej edukacyjnej przyszłości.</p>
+            </div>
+            <div class="flex">
+                <div class="w-1/3 text-center p-12">
+                    <div class="flex justify-center mb-10">
+                        <svg class="w-20 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+                          </svg>                        
+                    </div>
+                    <h2 class="mb-8 text-xl font-bold">Zarejestruj się online</h2>
+                    <p class="text-sm text-gray-600">Załóż konto w kilka chwil i uzyskaj dostęp do wszystkich naszych kursów stacjonarnych oraz online.</p>
+                </div>
+                <div class="w-1/3 text-center p-12">
+                    <div class="flex justify-center mb-10">
+                        <svg class="w-20 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                          </svg>                         
+                    </div>
+                    <h5 class="mb-8 text-xl font-bold">Wybierz kurs</h5>
+                    <p class="text-sm text-gray-600">Przeglądaj dostępne kursy i wybierz te, które najlepiej odpowiadają Twoim potrzebom i zainteresowaniom.</p>
+                </div>
+                <div class="w-1/3 text-center p-12">
+                    <div class="flex justify-center mb-10">
+                        <svg class="w-20 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
+                          </svg>                     
+                    </div>
+                    <h5 class="mb-8 text-xl font-bold">Zacznij naukę</h5>
+                    <p class="text-sm text-gray-600">Uczestnicz w interaktywnych zajęciach prowadzonych przez naszych ekspertów w czasie rzeczywistym.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- motto -->
+
+    <section id="motto" class="h-[60vh] bg-cover bg-center" style="background-image: url(/dist/img/pexels-ivan-samkov-5676733.jpg)">
+        <div class="h-[60vh] bg-black bg-opacity-40">
+                <div class="p-36 text-center text-3xl font-thin">
+                    <h3 class="text-gray-200 mb-10">„Człowiek, który nie uczy się niczego nowego, stoi w miejscu. Tylko ci, którzy są gotowi się rozwijać, mogą prawdziwie zmieniać świat.”</h3>
+                    <h5 class="text-gray-200 italic text-lg">Albert Einstein</h5>
+                </div>
+        </div>
+    </section>
+
+<!-- nasze kursy -->
+
+    <section class="p-20 bg-gray-50" id="OurCourses">
+        <div class="container mx-auto px-2">
+            <h2 class="text-3xl mb-10 text-center">Najblisze kursy</h2>
+            <div class="flex gap-6">
+                <div class="w-1/2 shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-red-200 to-slate-200">
+                    <div class="px-4 py-6">
+                        <h4 class="font-bold mb-2 text-xl px-2">Zaawansowany Python dla programistów</h4>
+                        <div class="flex justify-between p-2">
+                            <p class="mb-2 text-gray-600 py-2">27.09.2024 - 28.09.2024</p>
+                            <p class="mb-2 text-right border border-slate-400 px-5 py-2 rounded-lg">Zdalne</p>
+                        </div>
+                        <h4 class="text-justify text-sm my-10 px-2">Szkolenie obejmuje zaawansowane programowanie wielowątkowe i asynchroniczne, zarządzanie pamięcią, optymalizacja kodu, praca z frameworkami webowymi (Django, Flask), tworzenie i testowanie mikrousług, wykorzystanie bibliotek do analizy danych i machine learningu, oraz implementacja wzorców projektowych.</h4>
+                        <div class="px-2">
+                            <span>Miejsce Szkolenia: </span><span class="text-gray-600">Zdalnie</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Czas trwania: </span><span class="text-gray-600">2 dni</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Liczba godzin: </span><span class="text-gray-600">16 h</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Wymagant poziom: </span><span class="text-gray-600">Zaawansowany</span>
+                        </div>
+                        <div class="text-right px-2 pt-10 font-bold">
+                            <p>1200 zł netto / 1476 zł brutto</p>
+                        </div>
+                        <button class="py-5 mt-5"><a class="bg-red-500 text-white text-sm px-5 py-2 inline-block rounded-lg hover:bg-red-700" href="singIn.html">Zapisz się</a></button>                      
+                    </div>
+                </div>
+                <div class="w-1/2 shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-red-200 to-slate-200">
+                    <div class="px-4 py-6">
+                        <h4 class="font-bold mb-2 text-xl px-2">Administrowanie siecią</h4>
+                        <div class="flex justify-between p-2">
+                            <p class="mb-2 text-gray-600 py-2">04.10.2024 - 06.10.2024</p>
+                            <p class="mb-2 text-right border border-slate-400 px-5 py-2 rounded-lg">Stacjonarne</p>
+                        </div>
+                        <h4 class="text-justify text-sm my-10 px-2">Szkolenie obejmuje konfigurację sieci i zarządzanie routerami i przełącznikami, zaawansowane protokoły routingu (OSPF, BGP), bezpieczeństwo sieci (firewalle, IDS/IPS), wirtualizacja sieci (SDN, NFV), monitorowanie i optymalizacja wydajności sieci, zarządzanie sieciami w chmurze oraz rozwiązywanie problemów sieciowych na poziomie eksperckim.</h4>
+                        <div class="px-2">
+                            <span>Miejsce Szkolenia: </span><span class="text-gray-600">Warszawa</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Czas trwania: </span><span class="text-gray-600">3 dni</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Liczba godzin: </span><span class="text-gray-600">24 h</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Wymagant poziom: </span><span class="text-gray-600">Ekspert</span>
+                        </div>
+                        <div class="text-right px-2 pt-10 font-bold">
+                            <p>2200 zł netto / 2706 zł brutto</p>
+                        </div>
+                        <button class="py-5 mt-5"><a class="bg-red-500 text-white text-sm px-5 py-2 inline-block rounded-lg hover:bg-red-700" href="singIn.html">Zapisz się</a></button>                      
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-6 py-6">
+                <div class="w-1/2 shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-red-200 to-slate-200">
+                    <div class="px-4 py-6">
+                        <h4 class="font-bold mb-2 text-xl px-2">Cyberbezpieczeństwo dzieci</h4>
+                        <div class="flex justify-between p-2">
+                            <p class="mb-2 text-gray-600 py-2">27.09.2024</p>
+                            <p class="mb-2 text-right border border-slate-400 px-5 py-2 rounded-lg">Zdalne</p>
+                        </div>
+                        <h4 class="text-justify text-sm my-10 px-2">Szkolenie obejmuje analizę i zapobieganie zagrożeniom w sieci, zarządzanie bezpieczeństwem systemów operacyjnych i aplikacji, konfigurację zapór sieciowych i VPN, zabezpieczenie przed phishingiem i malware, tworzenie polityk bezpieczeństwa oraz zarządzanie incydentami i reagowanie na naruszenia bezpieczeństwa.</h4>
+                        <div class="px-2">
+                            <span>Miejsce Szkolenia: </span><span class="text-gray-600">Zdalnie</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Czas trwania: </span><span class="text-gray-600">1 dzień</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Liczba godzin: </span><span class="text-gray-600">8 h</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Wymagant poziom: </span><span class="text-gray-600">Podstawowy</span>
+                        </div>
+                        <div class="text-right px-2 pt-10 font-bold">
+                            <p>1200 zł netto / 1476 zł brutto</p>
+                        </div>
+                        <button class="py-5 mt-5"><a class="bg-red-500 text-white text-sm px-5 py-2 inline-block rounded-lg hover:bg-red-700" href="singIn.html">Zapisz się</a></button>                      
+                    </div>
+                </div>
+                <div class="w-1/2 shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-red-200 to-slate-200">
+                    <div class="px-4 py-6">
+                        <h4 class="font-bold mb-2 text-xl px-2">Zaawansowany pakiet office dla biur</h4>
+                        <div class="flex justify-between p-2">
+                            <p class="mb-2 text-gray-600 py-2">14.10.2024 - 15.10.2024</p>
+                            <p class="mb-2 text-right border border-slate-400 px-5 py-2 rounded-lg">Stacjonarne</p>
+                        </div>
+                        <h4 class="text-justify text-sm my-10 px-2">Szkolenie obejmuje zaawansowane funkcje Excel, takie jak tabele przestawne, makra i formuły, edycję dokumentów Word z wykorzystaniem stylów i szablonów, tworzenie dynamicznych prezentacji w PowerPoint, zarządzanie dużymi bazami danych w Access, automatyzację zadań w Outlook oraz współpracę zespołową z wykorzystaniem SharePoint i Teams.</h4>
+                        <div class="px-2">
+                            <span>Miejsce Szkolenia: </span><span class="text-gray-600">Gdańsk</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Czas trwania: </span><span class="text-gray-600">2 dni</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Liczba godzin: </span><span class="text-gray-600">16 h</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Wymagant poziom: </span><span class="text-gray-600">Zaawansowany</span>
+                        </div>
+                        <div class="text-right px-2 pt-10 font-bold">
+                            <p>1800 zł netto / 2214 zł brutto</p>
+                        </div>
+                        <button class="py-5 mt-5"><a class="bg-red-500 text-white text-sm px-5 py-2 inline-block rounded-lg hover:bg-red-700" href="singIn.html">Zapisz się</a></button>                      
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-6 py-6">
+                <div class="w-1/2 shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-red-200 to-slate-200">
+                    <div class="px-4 py-6">
+                        <h4 class="font-bold mb-2 text-xl px-2">Wykorzystanie sztucznej inteligencji w HR</h4>
+                        <div class="flex justify-between p-2">
+                            <p class="mb-2 text-gray-600 py-2">29.10.2024</p>
+                            <p class="mb-2 text-right border border-slate-400 px-5 py-2 rounded-lg">Zdalne</p>
+                        </div>
+                        <h4 class="text-justify text-sm my-10 px-2">Szkolenie obejmuje wykorzystanie AI do automatyzacji procesów rekrutacyjnych, analizę danych kandydatów, zastosowanie chatbotów w komunikacji z kandydatami, ocenę zaangażowania i satysfakcji pracowników, optymalizację procesów szkoleniowych oraz wdrażanie algorytmów do oceny wydajności i rozwoju talentów.</h4>
+                        <div class="px-2">
+                            <span>Miejsce Szkolenia: </span><span class="text-gray-600">Zdalnie</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Czas trwania: </span><span class="text-gray-600">1 dzień</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Liczba godzin: </span><span class="text-gray-600">8 h</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Wymagant poziom: </span><span class="text-gray-600">Podstawowy</span>
+                        </div>
+                        <div class="text-right px-2 pt-10 font-bold">
+                            <p>1200 zł netto / 1476 zł brutto</p>
+                        </div>
+                        <button class="py-5 mt-5"><a class="bg-red-500 text-white text-sm px-5 py-2 inline-block rounded-lg hover:bg-red-700" href="singIn.html">Zapisz się</a></button>                      
+                    </div>
+                </div>
+                <div class="w-1/2 shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-red-200 to-slate-200">
+                    <div class="px-4 py-6">
+                        <h4 class="font-bold mb-2 text-xl px-2">Bezpieczne płatności</h4>
+                        <div class="flex justify-between p-2">
+                            <p class="mb-2 text-gray-600 py-2">10.10.2024</p>
+                            <p class="mb-2 text-right border border-slate-400 px-5 py-2 rounded-lg">Hybrydowe</p>
+                        </div>
+                        <h4 class="text-justify text-sm my-10 px-2">Szkolenie obejmuje zabezpieczanie transakcji online, zarządzanie ryzykiem i wykrywanie oszustw, zasady działania szyfrowania i tokenizacji danych, ochrona danych kart płatniczych, stosowanie dwuskładnikowej autoryzacji, edukacja klientów na temat bezpiecznych praktyk oraz monitorowanie i analiza działań podejrzanych.</h4>
+                        <div class="px-2">
+                            <span>Miejsce Szkolenia: </span><span class="text-gray-600">Zdalne</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Czas trwania: </span><span class="text-gray-600">1 dzień</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Liczba godzin: </span><span class="text-gray-600">4 h</span>
+                        </div>
+                        <div class="px-2">
+                            <span>Wymagant poziom: </span><span class="text-gray-600">Zaawansowany</span>
+                        </div>
+                        <div class="text-right px-2 pt-10 font-bold">
+                            <p>1200 zł netto / 1476 zł brutto</p>
+                        </div>
+                        <button class="py-5 mt-5"><a class="bg-red-500 text-white text-sm px-5 py-2 inline-block rounded-lg hover:bg-red-700" href="singIn.html">Zapisz się</a></button>                      
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto text-center pt-20">
+               <a class="bg-red-500 text-white text-sm px-5 py-2 inline-block rounded-lg hover:bg-red-700" href="courses.html">Zobacz więcej</a>
+           </div>
+        </div>
+    </section>
+
+<!-- o nas -->
+
+    <section id="aboutUs" class="h-[60vh] bg-cover bg-center" style="background-image: url(/dist/img/graduation-995042_1280.jpg)">
+        <div class="h-[60vh] bg-black bg-opacity-40">
+                <div class="p-14 text-center text-base font-thin">
+                    <h5 class="text-gray-100 mb-10">Jakość nauczania na pierwszym miejscu. Traktujemy kursanta z pełnym szacunkiem, przykładając olbrzymią uwagę to potrzeb naszych uczniów i rozwiązujące ich realne potrzeby, nastawione na jakość usługi i obsługi. Wiemy, że Twój czas jest cenny i dlatego postaramy się jak najkrótszą drogą poprowadzić Cię do osiągnięcia Twojego celu. Przy okazji zrobimy wszystko aby droga ta była przyjemna i inspirująca.</h5>
+                    <h5 class="text-gray-100 mb-10">Warto być z nami ponieważ wieloletnia obecność na rynku pozwoliła nam zdobyć odpowiednie doświadczenie, dzięki któremu jesteśmy w stanie sprostać nawet najbardziej skomplikowanym i zróżnicowanym oczekiwaniom naszych kursantów. Doświadczony kadra nauczycielska w sposób kompleksowy realizuje wszystkie powierzone nam zadania i dba o to, żeby kursanci na każdym etapie prac czuli, że są we właściwych rękach. </h5>
+                    <h5 class="text-gray-100 mb-10">Do nauczania używamy nowoczesnych i sprawdzonych pomocy naukowych powodują one wzrost motywacji kursantów, ubarwiają i dynamizują naukę. Utrzymujemy stały kontakt podczas zajęć. Oceny naszych kursów w skali szkolnej to ponad 4,7!</h5>
+                </div>
+        </div>
+    </section>
+
+    <!-- trust logo -->
+
+    <section class="p-20 bg-gray-50">
+        <div class="container mx-auto py-2">
+                <h2 class="text-3xl text-center font-bold mb-5">Zaufali nam</h2>
+                <div class="container mx-auto p-8 justify-between flex">
+                    <img class="w-28 shadow-lg overflow-hidden" src="/dist/img/logo/humaneo.png" alt="">
+                    <img class="w-28 shadow-lg overflow-hidden" src="/dist/img/logo/imgw.png" alt="">
+                    <img class="w-28 shadow-lg overflow-hidden" src="/dist/img/logo/pp.png" alt="">
+                    <img class="w-28 shadow-lg overflow-hidden" src="/dist/img/logo/us.png" alt="">
+                    <img class="w-28 shadow-lg overflow-hidden" src="/dist/img/logo/zus.png" alt="">
+                </div>
+        </div>
+    </section>
+
+<!-- stopka -->
+
+    <footer class="bg-black pt-12" id="contact">
+        <div class="container mx-auto px-2 text-white">
+                <div class="pb-6">
+                    <h2 class="text-xl mb-4 text-center">Więcej</h2>
+                    <ul class="text-center space-y-2 font-thin text-sm">
+                        <li><a href="index.html" class="hover:text-gray-400">Strona główna</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Polityka prywatności</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Zespół</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Klienci</a></li>
+                    </ul>
+                </div>
+                <div class="flex justify-between py-4">
+                    <div>
+                        <p class="text-xs text-left">Copyright © 2024 Helion Szkolenia. All rights reserved.</p>
+                    </div>
+                    <div class="flex items-center space-x-4 text-lg">
+                        <a href="https://www.facebook.com" aria-label="Facebook" class="hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/" aria-label="YouTube" class="hover:text-gray-400"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn" class="hover:text-gray-400"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
