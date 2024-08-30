@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="font-roboto">
+
+    <!-- header-nav-->
+
+    <header class="bg-[#2d2e2e] text-[#7d8792]">
+        <nav class="py-4">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+                <div>
+                    <a href="index.html"><img class="w-16 sm:w-20 lg:w-24" src="./dist/img/logo.7eb2c8777758d81eb13e.png" alt="Logo"></a>
+                </div>
+                <!-- Ikona hamburgera dla urządzeń mobilnych -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Menu nawigacji -->
+                <div class="hidden lg:flex">
+                    <ul class="flex space-x-8 lg:space-x-16 text-sm lg:text-base">
+                        <li class="hover:text-[#e0a80d]"><a href="./index.html">Kursy</a></li>
+                        <li class="hover:text-[#e0a80d]"><a href="./about.html">O nas</a></li>
+                        <li class="hover:text-[#e0a80d]"><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <button class="hidden lg:block">
+                    <a class="border px-4 py-2 lg:px-5 lg:py-2 rounded-lg hover:text-[#e0a80d] border-gray-300 text-sm lg:text-base" href="singIn.html">Zapisz się</a>
+                </button>
+            </div>
+
+            <!-- Menu mobilne -->
+            <div id="mobile-menu" class="hidden lg:hidden text-white px-4 py-4 mt-4">
+                <ul class="flex flex-col space-y-4 text-sm">
+                    <li class="hover:text-[#e0a80d]"><a href="./index.html">Kursy</a></li>
+                    <li class="hover:text-[#e0a80d]"><a href="./about.html">O nas</a></li>
+                    <li class="hover:text-[#e0a80d]"><a href="#contact">Kontakt</a></li>
+                    <li class="self-start border px-4 py-2 rounded-lg hover:text-[#e0a80d] border-gray-300 text-sm lg:text-base"><a href="singIn.html">Zapisz się</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- polityka prywatności -->
+    <section id="privacy-policy" class="bg-[#212222] text-[#7d8792] py-10 sm:py-16">
+        <div class="container mx-auto px-6 lg:px-12">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl text-[#e0a80d] mb-8 text-center">Polityka Prywatności</h2>
+            <div class="text-sm sm:text-base leading-relaxed text-gray-300">
+                <p class="mb-6">
+                    Niniejsza Polityka Prywatności opisuje, w jaki sposób Devcom (dalej: "firma") zbiera, przetwarza i przechowuje dane osobowe użytkowników, którzy korzystają z usług firmy, odwiedzają stronę internetową lub korzystają z innych usług oferowanych przez Devcom.
+                </p>
+                <h3 class="text-2xl text-[#e0a80d] mb-4">Jakie dane osobowe są przetwarzane?</h3>
+                <p class="mb-6">
+                    Firma Devcom może przetwarzać następujące dane osobowe:
+                </p>
+                <ul class="list-disc list-inside mb-6">
+                    <li>Imię i nazwisko</li>
+                    <li>Adres e-mail</li>
+                    <li>Numer telefonu</li>
+                    <li>Adres zamieszkania</li>
+                    <li>Nazwa firmy, NIP, REGON (w przypadku rejestracji firmowej)</li>
+                    <li>Adres IP oraz dane dotyczące sesji użytkownika</li>
+                </ul>
+                <h3 class="text-2xl text-[#e0a80d] mb-4">Cel przetwarzania danych osobowych</h3>
+                <p class="mb-6">
+                    Dane osobowe są przetwarzane w celu:
+                </p>
+                <ul class="list-disc list-inside mb-6">
+                    <li>Realizacji usług oferowanych przez Devcom</li>
+                    <li>Obsługi klienta i wsparcia technicznego</li>
+                    <li>Marketingu bezpośredniego i promocji</li>
+                    <li>Prowadzenia analiz i statystyk związanych z użytkowaniem strony internetowej</li>
+                </ul>
+                <h3 class="text-2xl text-[#e0a80d] mb-4">Przechowywanie danych</h3>
+                <p class="mb-6">
+                    Devcom przechowuje dane osobowe przez okres niezbędny do realizacji celów, dla których dane te zostały zebrane, zgodnie z obowiązującymi przepisami prawa.
+                </p>
+                <h3 class="text-2xl text-[#e0a80d] mb-4">Prawa użytkownika</h3>
+                <p class="mb-6">
+                    Każdy użytkownik ma prawo do dostępu do swoich danych osobowych, ich poprawiania, usunięcia, a także do ograniczenia przetwarzania danych. Użytkownik ma również prawo do wniesienia sprzeciwu wobec przetwarzania danych oraz do przenoszenia danych.
+                </p>
+                <p>
+                    Wszelkie pytania i wnioski dotyczące przetwarzania danych osobowych prosimy kierować na adres e-mail: <a href="mailto:kontakt@helionszkolenia.pl" class="text-[#e0a80d] hover:underline">kontakt@helionszkolenia.pl</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- stopka -->
+
+    <footer class="bg-black pt-12" id="contact">
+        <div class="container mx-auto px-2 text-white">
+            <div class="flex flex-col lg:flex-row justify-between items-center lg:items-center">
+                <!-- Logotyp -->
+                <div class="lg:order-1 flex items-center lg:justify-start justify-center mb-6 lg:mb-0">
+                    <img src="./dist/img/logo.7eb2c8777758d81eb13e.png" alt="Helion Szkolenia Logo" class="w-32">
+                </div>
+    
+                <!-- Sekcja Więcej -->
+                <div class="text-center lg:order-2 mb-6 lg:mb-0">
+                    <h2 class="text-xl mb-4">Więcej</h2>
+                    <ul class="space-y-2 font-thin text-sm">
+                        <li><a href="./index.html" class="hover:text-gray-400">Strona główna</a></li>
+                        <li><a href="./dist/privacyPolicy.html" class="hover:text-gray-400">Polityka prywatności</a></li>
+                        <li><a href="./index.html" class="hover:text-gray-400">Kursy</a></li>
+                        <li><a href="./about.html" class="hover:text-gray-400">O nas</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Sekcja kontaktowa -->
+                <div class="text-center lg:text-right lg:order-3 flex items-center lg:justify-end justify-center">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2">Kontakt</h3>
+                        <p><a href="tel:+48123456789" class="hover:text-gray-400">+48 531 989 599</a></p>
+                        <p><a href="tel:+48987654321" class="hover:text-gray-400">+48 601 866 750</a></p>
+                        <p><a href="mailto:kontakt@helionszkolenia.pl" class="hover:text-gray-400">biuro@dev-com.pl</a></p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="flex justify-between items-center py-4 mt-6 border-t border-gray-700">
+                <p class="text-xs text-gray-500">Copyright © 2024 Helion Szkolenia. All rights reserved.</p>
+                <div class="flex items-center space-x-4 text-lg">
+                    <a href="https://www.facebook.com" aria-label="Facebook" class="hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/" aria-label="YouTube" class="hover:text-gray-400"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/" aria-label="LinkedIn" class="hover:text-gray-400"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

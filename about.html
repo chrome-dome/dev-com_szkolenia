@@ -54,50 +54,20 @@
         </nav>
     </header>
 
-    <!-- wyszukiwarka kursów -->
-    <section id="filterCourses" class="bg-[#2d2e2e] text-white py-10 border-b border-[#3a3b3b]">
-        <div class="container mx-auto px-6 lg:px-8">
-            <div class="bg-[#212222] p-6 rounded-lg shadow-lg mb-10">
-                <h3 class="text-2xl font-semibold mb-6 text-center text-[#e0a80d]">Filtruj kursy</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <div>
-                        <label for="field" class="block text-sm font-medium text-gray-400">Dziedzina</label>
-                        <select id="field" name="field" class="mt-1 block w-full p-2 border border-[#3a3b3b] bg-[#2d2e2e] text-gray-300 rounded-md shadow-sm focus:ring-[#e0a80d] focus:border-[#e0a80d] sm:text-sm">
-                            <option value="">Wybierz dziedzinę</option>
-                            <option value="programming">Programowanie</option>
-                            <option value="networking">Sieci</option>
-                            <option value="cybersecurity">Cyberbezpieczeństwo</option>
-                            <option value="office">Pakiet Office</option>
-                            <option value="ai">Sztuczna inteligencja</option>
-                            <!-- Dodaj więcej opcji, jeśli potrzeba -->
-                        </select>
-                    </div>
+    <!-- about -->
 
-                    <div>
-                        <label for="level" class="block text-sm font-medium text-gray-400">Poziom zaawansowania</label>
-                        <select id="level" name="level" class="mt-1 block w-full p-2 border border-[#3a3b3b] bg-[#2d2e2e] text-gray-300 rounded-md shadow-sm focus:ring-[#e0a80d] focus:border-[#e0a80d] sm:text-sm">
-                            <option value="">Wybierz poziom</option>
-                            <option value="beginner">Podstawowy</option>
-                            <option value="intermediate">Średniozaawansowany</option>
-                            <option value="advanced">Zaawansowany</option>
-                            <option value="expert">Ekspert</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="mode" class="block text-sm font-medium text-gray-400">Tryb</label>
-                        <select id="mode" name="mode" class="mt-1 block w-full p-2 border border-[#3a3b3b] bg-[#2d2e2e] text-gray-300 rounded-md shadow-sm focus:ring-[#e0a80d] focus:border-[#e0a80d] sm:text-sm">
-                            <option value="">Wybierz tryb</option>
-                            <option value="online">Zdalne</option>
-                            <option value="onsite">Stacjonarne</option>
-                            <option value="hybrid">Hybrydowe</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="mt-6 text-center">
-                    <button class="bg-[#e0a80d] text-black text-sm px-5 py-2 rounded-lg hover:bg-[#c9960b]">Filtruj</button>
-                </div>
+    <section id="aboutUs" class="min-h-[40vh] sm:min-h-[50vh] lg:min-h-[60vh] bg-cover bg-center" style="background-image: url(./dist/img/people-2569234_640.jpg)">
+        <div class="min-h-[40vh] sm:min-h-[50vh] lg:min-h-[60vh] bg-[#2d2e2e] bg-opacity-90 flex items-center">
+            <div class="px-6 sm:px-10 lg:px-36 text-center lg:text-left text-xl sm:text-2xl lg:text-3xl font-thin">
+                <p class="text-gray-200 mb-4 sm:mb-6 lg:mb-8 text-base sm:text-lg lg:text-xl leading-relaxed">
+                    Nasza grupa szkoleniowców to zespół profesjonalistów z wieloletnim doświadczeniem. Wszyscy działają aktywnie w swoich dziedzinach, łącząc teorię z praktyką na najwyższym poziomie. Każdy z nas to specjalista w swojej dziedzinie, od programowania, przez sieci, cyberbezpieczeństwo, UX/UI, aż po zaawansowane programy office.
+                </p>
+                <p class="text-gray-200 mb-4 sm:mb-6 lg:mb-8 text-base sm:text-lg lg:text-xl leading-relaxed">
+                    Z pasją dzielimy się wiedzą, która pomaga innym rozwijać się i osiągać sukcesy. Nasze szkolenia są nie tylko pełne wartościowych treści, ale też dostosowane do realiów rynku, dzięki czemu uczestnicy zdobywają umiejętności, które natychmiast mogą zastosować w praktyce.
+                </p>
+                <p class="text-gray-200 text-base sm:text-lg lg:text-xl leading-relaxed">
+                    Dołącz do tysięcy zadowolonych kursantów, którzy z naszą pomocą podnieśli swoje kompetencje i pewność siebie w branży. Jesteśmy tutaj, aby wspierać Twój rozwój na każdym kroku.
+                </p>
             </div>
         </div>
     </section>
@@ -106,7 +76,7 @@
 
     <section id="OurCourses" class="p-10 sm:p-20 bg-[#212222]">
         <div class="container mx-auto">
-            <h2 class="text-3xl sm:text-4xl mb-10 text-center text-[#e0a80d]">Nasze kursy</h2>
+            <h2 class="text-3xl sm:text-4xl mb-10 text-center text-[#e0a80d]">Najbliższe kursy</h2>
             <div class="grid gap-6 grid-cols-1 md:grid-cols-2 pb-6">
                 <div class="shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-[#3a3b3b] to-[#2d2e2e]">
                     <div class="px-4 py-6 flex flex-col justify-between h-full">
@@ -145,7 +115,9 @@
                 <div class="shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-[#3a3b3b] to-[#2d2e2e]">
                     <div class="px-4 py-6 flex flex-col justify-between h-full">
                         <div>
-                            <h4 class="font-bold mb-2 text-xl lg:text-2xl px-2 text-[#e0a80d]">             <a href="./catalogue/administrowanieSiecią.html" class="hover:underline">Administrowanie Siecią</a></h4>
+                            <h4 class="font-bold mb-2 text-xl lg:text-2xl px-2 text-[#e0a80d]">
+                                <a href="./catalogue/administrowanieSiecią.html" class="hover:underline">Administrowanie Siecią</a>
+                            </h4>
                             <div class="flex justify-between p-2">
                                 <p class="mb-2 text-gray-300 py-2">10.10.2024 - 12.10.2024</p>
                                 <p class="mb-2 text-right border border-[#e0a80d] text-[#e0a80d] px-5 py-2 rounded-lg">Stacjonarne</p>
@@ -245,79 +217,45 @@
                     </div>
                 </div>          
             </div>
-            <div class="grid gap-6 grid-cols-1 md:grid-cols-2 pb-6">
-                <div class="shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-[#3a3b3b] to-[#2d2e2e]">
-                    <div class="px-4 py-6 flex flex-col justify-between h-full">
-                        <div>
-                            <h4 class="font-bold mb-2 text-xl lg:text-2xl px-2 text-[#e0a80d]">
-                                <a href="./catalogue/zaawansowanyOffice.html" class="hover:underline">Zaawansowany Office w Biurze</a>
-                            </h4>
-                            <div class="flex justify-between p-2">
-                                <p class="mb-2 text-gray-300 py-2">05.11.2024 - 07.11.2024</p>
-                                <p class="mb-2 text-right border border-[#e0a80d] text-[#e0a80d] px-5 py-2 rounded-lg">Stacjonarne</p>
-                            </div>
-                            <p class="text-justify text-sm lg:text-base my-6 lg:my-10 px-2 text-gray-300 min-h-[100px]">Szkolenie obejmuje zaawansowane funkcje pakietu Microsoft Office, w tym Excel, Word, PowerPoint, Outlook i Access, z naciskiem na automatyzację zadań i efektywne zarządzanie dokumentami w środowisku biurowym.</p>
-                        </div>
-                        <div class="mt-auto">
-                            <div class="px-2 text-gray-300">
-                                <span>Miejsce Szkolenia: </span><span>Wrocław</span>
-                            </div>
-                            <div class="px-2 text-gray-300">
-                                <span>Czas trwania: </span><span>3 dni</span>
-                            </div>
-                            <div class="px-2 text-gray-300">
-                                <span>Liczba godzin: </span><span>24 h</span>
-                            </div>
-                            <div class="px-2 text-gray-300">
-                                <span>Wymagany poziom: </span><span>Zaawansowany</span>
-                            </div>
-                            <div class="text-right px-2 pt-6 lg:pt-10 font-bold text-[#e0a80d]">
-                                <p>1800 zł netto / 2214 zł brutto</p>
-                            </div>
-                            <button class="py-3 lg:py-5 mt-5 bg-[#e0a80d] hover:bg-[#c9960b] text-black text-sm lg:text-base px-4 lg:px-5 py-2 rounded-lg w-full">
-                                <a href="singIn.html">Zapisz się</a>
-                            </button>   
-                        </div>                   
+            <div class="container mx-auto text-center pt-10">
+            <a class="bg-[#e0a80d] text-black text-sm lg:text-base px-5 py-2 inline-block rounded-lg hover:bg-[#c9960b]" href="courses.html">Zobacz więcej</a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Lokacje -->
+
+    <section id="locations" class="pt-10 pb-20 bg-[#212222]">
+        <div class="container mx-auto px-6 lg:px-12">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl text-[#e0a80d] mb-10 text-center">Nasze lokalizacje</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <!-- Sekcja mapy -->
+                <div class="h-64 lg:h-auto">
+                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-200 mb-4 text-center lg:text-left">Tutaj szkolimy</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1412.909738572681!2d20.420940798679055!3d51.03580877795762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47182ce2e10eca2b%3A0x64999a735385b9e6!2zTW5pw7N3LCBQb2xza2E!5e1!3m2!1spl!2sus!4v1725039406648!5m2!1spl!2sus" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <!-- sekcja zdjęć -->
+                <div class="flex flex-col justify-center mt-6 lg:mt-0">
+                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-200 mb-4 text-center lg:text-left">Nasze sale szkoleniowe</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://via.placeholder.com/300" alt="Wnętrze sali 1" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="https://via.placeholder.com/300" alt="Wnętrze sali 2" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="https://via.placeholder.com/300" alt="Wnętrze sali 3" class="rounded-lg shadow-lg w-full h-48 object-cover">
+                        <img src="https://via.placeholder.com/300" alt="Wnętrze sali 4" class="rounded-lg shadow-lg w-full h-48 object-cover">
                     </div>
                 </div>
-                <div class="shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-[#3a3b3b] to-[#2d2e2e]">
-                    <div class="px-4 py-6 flex flex-col justify-between h-full">
-                        <div>
-                            <h4 class="font-bold mb-2 text-xl lg:text-2xl px-2 text-[#e0a80d]">
-                                <a href="./catalogue/programowanieAI.html" class="hover:underline">Programowanie AI</a>
-                            </h4>
-                            <div class="flex justify-between p-2">
-                                <p class="mb-2 text-gray-300 py-2">12.11.2024 - 14.11.2024</p>
-                                <p class="mb-2 text-right border border-[#e0a80d] text-[#e0a80d] px-5 py-2 rounded-lg">Zdalne</p>
-                            </div>
-                            <p class="text-justify text-sm lg:text-base my-6 lg:my-10 px-2 text-gray-300 min-h-[100px]">Szkolenie obejmuje programowanie sztucznej inteligencji, w tym uczenie maszynowe, przetwarzanie języka naturalnego, oraz budowanie i wdrażanie modeli AI w praktycznych zastosowaniach.</p>
-                        </div>
-                        <div class="mt-auto">
-                            <div class="px-2 text-gray-300">
-                                <span>Miejsce Szkolenia: </span><span>Zdalnie</span>
-                            </div>
-                            <div class="px-2 text-gray-300">
-                                <span>Czas trwania: </span><span>3 dni</span>
-                            </div>
-                            <div class="px-2 text-gray-300">
-                                <span>Liczba godzin: </span><span>24 h</span>
-                            </div>
-                            <div class="px-2 text-gray-300">
-                                <span>Wymagany poziom: </span><span>Zaawansowany</span>
-                            </div>
-                            <div class="text-right px-2 pt-6 lg:pt-10 font-bold text-[#e0a80d]">
-                                <p>2200 zł netto / 2706 zł brutto</p>
-                            </div>
-                            <button class="py-3 lg:py-5 mt-5 bg-[#e0a80d] hover:bg-[#c9960b] text-black text-sm lg:text-base px-4 lg:px-5 py-2 rounded-lg w-full">
-                                <a href="singIn.html">Zapisz się</a>
-                            </button>   
-                        </div>                   
-                    </div>
-                </div>          
             </div>
-            <!-- <div class="container mx-auto text-center pt-10">
-            <a class="bg-[#e0a80d] text-black text-sm lg:text-base px-5 py-2 inline-block rounded-lg hover:bg-[#c9960b]" href="courses.html">Zobacz więcej</a>
-            </div> -->
+        </div>
+    </section>
+
+    <!-- Motto -->
+    <section id="motto" class="min-h-[40vh] sm:min-h-[50vh] lg:min-h-[60vh] bg-cover bg-center" style="background-image: url(./dist/img/pexels-ivan-samkov-5676733.jpg)">
+        <div class="min-h-[40vh] sm:min-h-[50vh] lg:min-h-[60vh] bg-[#2d2e2e] bg-opacity-90 flex items-center py-10">
+            <div class="px-6 sm:px-10 lg:px-36 text-center text-xl sm:text-2xl lg:text-3xl font-thin">
+                <h3 class="text-gray-200 mb-4 sm:mb-6 lg:mb-10">„Człowiek, który nie uczy się niczego nowego, stoi w miejscu. Tylko ci, którzy są gotowi się rozwijać, mogą prawdziwie zmieniać świat.”</h3>
+                <h5 class="text-gray-200 italic text-base sm:text-lg lg:text-xl">Albert Einstein</h5>
+            </div>
         </div>
     </section>
 
